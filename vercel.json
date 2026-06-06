@@ -1,4 +1,5 @@
 {
+  "name": "milkhub-analytics",
   "version": 2,
   "builds": [
     {
