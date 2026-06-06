@@ -1,0 +1,5 @@
+{
+  "name": "MilkHub Analytics",
+  "description": "A comprehensive dashboard for managing and analyzing 10-day milk reports from various collection hubs. Admins can manage hubs and users, while hub incharges can input daily data and view performance trends and differences.",
+  "requestFramePermissions": []
+}

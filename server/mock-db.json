@@ -1,0 +1,1383 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Admin User",
+      "username": "admin",
+      "password": "password",
+      "role": "Admin",
+      "hubId": "hub-0"
+    },
+    {
+      "id": "user-2",
+      "name": "Central Dairy Incharge",
+      "username": "central.incharge",
+      "password": "password",
+      "role": "Hub Incharge",
+      "hubId": "hub-1"
+    },
+    {
+      "id": "user-3",
+      "name": "North Village Incharge",
+      "username": "north.incharge",
+      "password": "password",
+      "role": "Hub Incharge",
+      "hubId": "hub-2"
+    },
+    {
+      "id": "user-4",
+      "name": "South Village Incharge",
+      "username": "south.incharge",
+      "password": "password",
+      "role": "Hub Incharge",
+      "hubId": "hub-3"
+    },
+    {
+      "id": "user-5",
+      "name": "Metro Dairy Incharge",
+      "username": "metro.incharge",
+      "password": "password",
+      "role": "Hub Incharge",
+      "hubId": "hub-4"
+    },
+    {
+      "id": "user-6",
+      "name": "East Town Incharge",
+      "username": "east.incharge",
+      "password": "password",
+      "role": "Hub Incharge",
+      "hubId": "hub-5"
+    },
+    {
+      "id": "user-1780675421161",
+      "name": "RAMANAIKANPATTI Incharge",
+      "username": "210642",
+      "password": "210642",
+      "role": "Hub Incharge",
+      "hubId": "hub-1780675421161"
+    },
+    {
+      "id": "user-1780675452195",
+      "name": "KANAKABOMNPATTI Incharge",
+      "username": "210643",
+      "password": "210643",
+      "role": "Hub Incharge",
+      "hubId": "hub-1780675452195"
+    }
+  ],
+  "hubs": [
+    {
+      "id": "hub-0",
+      "name": "Corporate HQ",
+      "parentId": null
+    },
+    {
+      "id": "hub-1",
+      "name": "Central Dairy",
+      "parentId": null
+    },
+    {
+      "id": "hub-2",
+      "name": "North Village Collection",
+      "parentId": "hub-1"
+    },
+    {
+      "id": "hub-3",
+      "name": "South Village Collection",
+      "parentId": "hub-1"
+    },
+    {
+      "id": "hub-4",
+      "name": "Metro Dairy",
+      "parentId": null
+    },
+    {
+      "id": "hub-5",
+      "name": "East Town Collection",
+      "parentId": "hub-4"
+    },
+    {
+      "id": "hub-1780675421161",
+      "name": "RAMANAIKANPATTI",
+      "parentId": null
+    },
+    {
+      "id": "hub-1780675452195",
+      "name": "KANAKABOMNPATTI",
+      "parentId": "hub-1780675421161"
+    }
+  ],
+  "records": [
+    {
+      "id": "record-hub-1-2026-06-05",
+      "hubId": "hub-1",
+      "date": "2026-06-05",
+      "morning": {
+        "quantity": 629.9,
+        "fat": 3.7,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 524.5,
+        "fat": 4.1,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-2-2026-06-05",
+      "hubId": "hub-2",
+      "date": "2026-06-05",
+      "morning": {
+        "quantity": 678.7,
+        "fat": 4,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 583.2,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-06-05",
+      "hubId": "hub-3",
+      "date": "2026-06-05",
+      "morning": {
+        "quantity": 633.7,
+        "fat": 3.7,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 553.6,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-4-2026-06-05",
+      "hubId": "hub-4",
+      "date": "2026-06-05",
+      "morning": {
+        "quantity": 596.7,
+        "fat": 3.9,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 548.1,
+        "fat": 3.8,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-06-05",
+      "hubId": "hub-5",
+      "date": "2026-06-05",
+      "morning": {
+        "quantity": 656.5,
+        "fat": 3.9,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 464.5,
+        "fat": 4.2,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-1-2026-06-04",
+      "hubId": "hub-1",
+      "date": "2026-06-04",
+      "morning": {
+        "quantity": 692.7,
+        "fat": 3.7,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 456.7,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-06-04",
+      "hubId": "hub-2",
+      "date": "2026-06-04",
+      "morning": {
+        "quantity": 541.5,
+        "fat": 3.7,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 588.6,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-06-04",
+      "hubId": "hub-3",
+      "date": "2026-06-04",
+      "morning": {
+        "quantity": 611.7,
+        "fat": 3.8,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 474.6,
+        "fat": 3.9,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-4-2026-06-04",
+      "hubId": "hub-4",
+      "date": "2026-06-04",
+      "morning": {
+        "quantity": 581.8,
+        "fat": 3.6,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 534.9,
+        "fat": 4.1,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-06-04",
+      "hubId": "hub-5",
+      "date": "2026-06-04",
+      "morning": {
+        "quantity": 544,
+        "fat": 3.7,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 519.9,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-06-03",
+      "hubId": "hub-1",
+      "date": "2026-06-03",
+      "morning": {
+        "quantity": 602.5,
+        "fat": 3.7,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 461.5,
+        "fat": 4.1,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-2-2026-06-03",
+      "hubId": "hub-2",
+      "date": "2026-06-03",
+      "morning": {
+        "quantity": 590.2,
+        "fat": 3.8,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 590.6,
+        "fat": 3.8,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-3-2026-06-03",
+      "hubId": "hub-3",
+      "date": "2026-06-03",
+      "morning": {
+        "quantity": 694,
+        "fat": 3.9,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 567.9,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-4-2026-06-03",
+      "hubId": "hub-4",
+      "date": "2026-06-03",
+      "morning": {
+        "quantity": 677.6,
+        "fat": 3.5,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 498.5,
+        "fat": 3.8,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-06-03",
+      "hubId": "hub-5",
+      "date": "2026-06-03",
+      "morning": {
+        "quantity": 568.9,
+        "fat": 4,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 576.1,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-06-02",
+      "hubId": "hub-1",
+      "date": "2026-06-02",
+      "morning": {
+        "quantity": 651.4,
+        "fat": 3.6,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 561.9,
+        "fat": 4.1,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-2-2026-06-02",
+      "hubId": "hub-2",
+      "date": "2026-06-02",
+      "morning": {
+        "quantity": 571.3,
+        "fat": 3.9,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 511.8,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-06-02",
+      "hubId": "hub-3",
+      "date": "2026-06-02",
+      "morning": {
+        "quantity": 591,
+        "fat": 3.8,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 576.5,
+        "fat": 3.8,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-4-2026-06-02",
+      "hubId": "hub-4",
+      "date": "2026-06-02",
+      "morning": {
+        "quantity": 638.3,
+        "fat": 3.5,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 451,
+        "fat": 4.1,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-5-2026-06-02",
+      "hubId": "hub-5",
+      "date": "2026-06-02",
+      "morning": {
+        "quantity": 538.2,
+        "fat": 3.8,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 505.2,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-06-01",
+      "hubId": "hub-1",
+      "date": "2026-06-01",
+      "morning": {
+        "quantity": 627.7,
+        "fat": 3.8,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 523,
+        "fat": 3.8,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-06-01",
+      "hubId": "hub-2",
+      "date": "2026-06-01",
+      "morning": {
+        "quantity": 606.9,
+        "fat": 4,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 472,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-06-01",
+      "hubId": "hub-3",
+      "date": "2026-06-01",
+      "morning": {
+        "quantity": 658.6,
+        "fat": 3.7,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 501.4,
+        "fat": 4.2,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-4-2026-06-01",
+      "hubId": "hub-4",
+      "date": "2026-06-01",
+      "morning": {
+        "quantity": 551.9,
+        "fat": 4,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 555.8,
+        "fat": 3.9,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-06-01",
+      "hubId": "hub-5",
+      "date": "2026-06-01",
+      "morning": {
+        "quantity": 644.9,
+        "fat": 3.6,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 473.7,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-31",
+      "hubId": "hub-1",
+      "date": "2026-05-31",
+      "morning": {
+        "quantity": 567.7,
+        "fat": 4,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 521.7,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-31",
+      "hubId": "hub-2",
+      "date": "2026-05-31",
+      "morning": {
+        "quantity": 543.1,
+        "fat": 3.6,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 488.4,
+        "fat": 4.2,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-31",
+      "hubId": "hub-3",
+      "date": "2026-05-31",
+      "morning": {
+        "quantity": 642.5,
+        "fat": 3.7,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 597.8,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-31",
+      "hubId": "hub-4",
+      "date": "2026-05-31",
+      "morning": {
+        "quantity": 510.1,
+        "fat": 3.8,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 534.1,
+        "fat": 4.2,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-31",
+      "hubId": "hub-5",
+      "date": "2026-05-31",
+      "morning": {
+        "quantity": 553.9,
+        "fat": 3.9,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 552.7,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-30",
+      "hubId": "hub-1",
+      "date": "2026-05-30",
+      "morning": {
+        "quantity": 518.7,
+        "fat": 3.7,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 527.1,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-30",
+      "hubId": "hub-2",
+      "date": "2026-05-30",
+      "morning": {
+        "quantity": 677.4,
+        "fat": 3.6,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 490.8,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-30",
+      "hubId": "hub-3",
+      "date": "2026-05-30",
+      "morning": {
+        "quantity": 654.4,
+        "fat": 3.8,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 491.3,
+        "fat": 4,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-30",
+      "hubId": "hub-4",
+      "date": "2026-05-30",
+      "morning": {
+        "quantity": 557.2,
+        "fat": 4,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 576.4,
+        "fat": 4.2,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-30",
+      "hubId": "hub-5",
+      "date": "2026-05-30",
+      "morning": {
+        "quantity": 610.3,
+        "fat": 3.8,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 598.3,
+        "fat": 3.9,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-29",
+      "hubId": "hub-1",
+      "date": "2026-05-29",
+      "morning": {
+        "quantity": 634.7,
+        "fat": 4,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 507.1,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-29",
+      "hubId": "hub-2",
+      "date": "2026-05-29",
+      "morning": {
+        "quantity": 613.9,
+        "fat": 4,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 539.2,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-29",
+      "hubId": "hub-3",
+      "date": "2026-05-29",
+      "morning": {
+        "quantity": 559.3,
+        "fat": 3.7,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 454.5,
+        "fat": 3.9,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-29",
+      "hubId": "hub-4",
+      "date": "2026-05-29",
+      "morning": {
+        "quantity": 521.5,
+        "fat": 4,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 536.9,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-29",
+      "hubId": "hub-5",
+      "date": "2026-05-29",
+      "morning": {
+        "quantity": 600.2,
+        "fat": 3.7,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 505,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-28",
+      "hubId": "hub-1",
+      "date": "2026-05-28",
+      "morning": {
+        "quantity": 557.5,
+        "fat": 3.6,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 557.4,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-28",
+      "hubId": "hub-2",
+      "date": "2026-05-28",
+      "morning": {
+        "quantity": 569,
+        "fat": 4,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 487.7,
+        "fat": 4,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-28",
+      "hubId": "hub-3",
+      "date": "2026-05-28",
+      "morning": {
+        "quantity": 668.1,
+        "fat": 3.6,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 525.4,
+        "fat": 3.9,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-28",
+      "hubId": "hub-4",
+      "date": "2026-05-28",
+      "morning": {
+        "quantity": 696.7,
+        "fat": 3.7,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 469,
+        "fat": 3.9,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-28",
+      "hubId": "hub-5",
+      "date": "2026-05-28",
+      "morning": {
+        "quantity": 562.3,
+        "fat": 3.6,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 541.8,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-27",
+      "hubId": "hub-1",
+      "date": "2026-05-27",
+      "morning": {
+        "quantity": 668.7,
+        "fat": 3.6,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 533.4,
+        "fat": 4.2,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-27",
+      "hubId": "hub-2",
+      "date": "2026-05-27",
+      "morning": {
+        "quantity": 513.4,
+        "fat": 3.8,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 492.6,
+        "fat": 4.1,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-27",
+      "hubId": "hub-3",
+      "date": "2026-05-27",
+      "morning": {
+        "quantity": 625.2,
+        "fat": 3.9,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 562.7,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-27",
+      "hubId": "hub-4",
+      "date": "2026-05-27",
+      "morning": {
+        "quantity": 524.4,
+        "fat": 3.8,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 453.6,
+        "fat": 3.9,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-27",
+      "hubId": "hub-5",
+      "date": "2026-05-27",
+      "morning": {
+        "quantity": 511.2,
+        "fat": 3.9,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 494.3,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-26",
+      "hubId": "hub-1",
+      "date": "2026-05-26",
+      "morning": {
+        "quantity": 685.9,
+        "fat": 3.7,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 512.9,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-26",
+      "hubId": "hub-2",
+      "date": "2026-05-26",
+      "morning": {
+        "quantity": 675.9,
+        "fat": 3.6,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 597.3,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-26",
+      "hubId": "hub-3",
+      "date": "2026-05-26",
+      "morning": {
+        "quantity": 553.4,
+        "fat": 4,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 541,
+        "fat": 4.2,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-26",
+      "hubId": "hub-4",
+      "date": "2026-05-26",
+      "morning": {
+        "quantity": 602.8,
+        "fat": 3.8,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 479.7,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-26",
+      "hubId": "hub-5",
+      "date": "2026-05-26",
+      "morning": {
+        "quantity": 561.9,
+        "fat": 3.5,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 457.8,
+        "fat": 4.1,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-25",
+      "hubId": "hub-1",
+      "date": "2026-05-25",
+      "morning": {
+        "quantity": 579.5,
+        "fat": 3.9,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 476.8,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-25",
+      "hubId": "hub-2",
+      "date": "2026-05-25",
+      "morning": {
+        "quantity": 626.8,
+        "fat": 3.6,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 574.7,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-25",
+      "hubId": "hub-3",
+      "date": "2026-05-25",
+      "morning": {
+        "quantity": 576.9,
+        "fat": 3.6,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 581.5,
+        "fat": 4,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-25",
+      "hubId": "hub-4",
+      "date": "2026-05-25",
+      "morning": {
+        "quantity": 505.7,
+        "fat": 3.8,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 550.1,
+        "fat": 4.1,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-25",
+      "hubId": "hub-5",
+      "date": "2026-05-25",
+      "morning": {
+        "quantity": 616.4,
+        "fat": 3.5,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 537.4,
+        "fat": 4.2,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-24",
+      "hubId": "hub-1",
+      "date": "2026-05-24",
+      "morning": {
+        "quantity": 666.7,
+        "fat": 3.7,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 477.6,
+        "fat": 3.9,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-24",
+      "hubId": "hub-2",
+      "date": "2026-05-24",
+      "morning": {
+        "quantity": 553.3,
+        "fat": 3.8,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 484.6,
+        "fat": 3.9,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-24",
+      "hubId": "hub-3",
+      "date": "2026-05-24",
+      "morning": {
+        "quantity": 681.5,
+        "fat": 3.5,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 503.2,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-24",
+      "hubId": "hub-4",
+      "date": "2026-05-24",
+      "morning": {
+        "quantity": 664.3,
+        "fat": 3.9,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 496.2,
+        "fat": 4,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-24",
+      "hubId": "hub-5",
+      "date": "2026-05-24",
+      "morning": {
+        "quantity": 654.8,
+        "fat": 3.8,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 586.4,
+        "fat": 4,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-23",
+      "hubId": "hub-1",
+      "date": "2026-05-23",
+      "morning": {
+        "quantity": 587.3,
+        "fat": 3.8,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 594.7,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-23",
+      "hubId": "hub-2",
+      "date": "2026-05-23",
+      "morning": {
+        "quantity": 693.8,
+        "fat": 4,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 566.4,
+        "fat": 3.9,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-23",
+      "hubId": "hub-3",
+      "date": "2026-05-23",
+      "morning": {
+        "quantity": 505.8,
+        "fat": 3.9,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 557.1,
+        "fat": 3.9,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-23",
+      "hubId": "hub-4",
+      "date": "2026-05-23",
+      "morning": {
+        "quantity": 676.7,
+        "fat": 3.6,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 571.6,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-23",
+      "hubId": "hub-5",
+      "date": "2026-05-23",
+      "morning": {
+        "quantity": 582.5,
+        "fat": 3.5,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 455.9,
+        "fat": 3.9,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-1-2026-05-22",
+      "hubId": "hub-1",
+      "date": "2026-05-22",
+      "morning": {
+        "quantity": 694.7,
+        "fat": 3.6,
+        "snf": 8.8
+      },
+      "evening": {
+        "quantity": 559.1,
+        "fat": 4.1,
+        "snf": 8.6
+      }
+    },
+    {
+      "id": "record-hub-2-2026-05-22",
+      "hubId": "hub-2",
+      "date": "2026-05-22",
+      "morning": {
+        "quantity": 542.3,
+        "fat": 3.6,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 565.1,
+        "fat": 4,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-3-2026-05-22",
+      "hubId": "hub-3",
+      "date": "2026-05-22",
+      "morning": {
+        "quantity": 677.3,
+        "fat": 3.8,
+        "snf": 8.7
+      },
+      "evening": {
+        "quantity": 474.3,
+        "fat": 3.9,
+        "snf": 8.8
+      }
+    },
+    {
+      "id": "record-hub-4-2026-05-22",
+      "hubId": "hub-4",
+      "date": "2026-05-22",
+      "morning": {
+        "quantity": 610.2,
+        "fat": 3.9,
+        "snf": 8.5
+      },
+      "evening": {
+        "quantity": 530.6,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-5-2026-05-22",
+      "hubId": "hub-5",
+      "date": "2026-05-22",
+      "morning": {
+        "quantity": 616.3,
+        "fat": 3.6,
+        "snf": 8.6
+      },
+      "evening": {
+        "quantity": 561.5,
+        "fat": 4.1,
+        "snf": 8.7
+      }
+    },
+    {
+      "id": "record-hub-1780675421161-2026-06-05",
+      "hubId": "hub-1780675421161",
+      "date": "2026-06-05",
+      "morning": {
+        "quantity": 100,
+        "fat": 4.5,
+        "snf": 7.9
+      },
+      "evening": {
+        "quantity": 499,
+        "fat": 4.5,
+        "snf": 7.8
+      }
+    },
+    {
+      "id": "record-hub-1780675452195-2026-06-05",
+      "hubId": "hub-1780675452195",
+      "date": "2026-06-05",
+      "morning": {
+        "quantity": 300.01,
+        "fat": 4.5,
+        "snf": 7.9
+      },
+      "evening": {
+        "quantity": 400,
+        "fat": 4.5,
+        "snf": 7.8
+      },
+      "eveningReTest": {
+        "quantity": 399,
+        "fat": 4.3,
+        "snf": 7.9
+      },
+      "morningReTest": {
+        "quantity": 299,
+        "fat": 4.5,
+        "snf": 7.71
+      }
+    },
+    {
+      "id": "record-hub-1780675452195-2026-06-04",
+      "hubId": "hub-1780675452195",
+      "date": "2026-06-04",
+      "morning": {
+        "quantity": 700,
+        "fat": 4.6,
+        "snf": 7.9
+      },
+      "evening": {
+        "quantity": 800,
+        "fat": 3.9,
+        "snf": 7.7
+      },
+      "eveningReTest": {
+        "quantity": 800,
+        "fat": 4,
+        "snf": 7.88
+      },
+      "morningReTest": {
+        "quantity": 699,
+        "fat": 4.5,
+        "snf": 7.8
+      }
+    },
+    {
+      "id": "record-hub-1780675421161-2026-06-04",
+      "hubId": "hub-1780675421161",
+      "date": "2026-06-04",
+      "morning": {
+        "quantity": 500,
+        "fat": 4.5,
+        "snf": 7.9
+      },
+      "evening": {
+        "quantity": 500,
+        "fat": 4.8,
+        "snf": 7.88
+      }
+    },
+    {
+      "id": "record-hub-1780675452195-2026-06-03",
+      "hubId": "hub-1780675452195",
+      "date": "2026-06-03",
+      "morning": {
+        "quantity": 1000,
+        "fat": 4.5,
+        "snf": 7.9
+      },
+      "evening": {
+        "quantity": 800,
+        "fat": 3.7,
+        "snf": 7.78
+      },
+      "eveningReTest": {
+        "quantity": 799,
+        "fat": 3.6,
+        "snf": 7.7
+      },
+      "morningReTest": {
+        "quantity": 999,
+        "fat": 4.4,
+        "snf": 7.8
+      }
+    },
+    {
+      "id": "record-hub-1780675421161-2026-06-06",
+      "hubId": "hub-1780675421161",
+      "date": "2026-06-06",
+      "morning": {
+        "quantity": 300,
+        "fat": 3.48,
+        "snf": 7.9
+      },
+      "evening": {
+        "quantity": 0,
+        "fat": 0,
+        "snf": 0
+      }
+    }
+  ],
+  "tankers": [
+    {
+      "id": "tanker-hub-1780675421161-2026-06-05",
+      "hubId": "hub-1780675421161",
+      "date": "2026-06-05",
+      "quantity": 1296,
+      "fat": 4.3,
+      "snf": 8.4
+    },
+    {
+      "id": "tanker-hub-1780675421161-2026-06-04",
+      "hubId": "hub-1780675421161",
+      "date": "2026-06-04",
+      "quantity": 2499,
+      "fat": 4.4,
+      "snf": 7.86
+    },
+    {
+      "id": "tanker-hub-1780675421161-2026-06-06",
+      "hubId": "hub-1780675421161",
+      "date": "2026-06-06",
+      "quantity": 7000.02,
+      "fat": 4.5,
+      "snf": 7.9
+    }
+  ]
+}
