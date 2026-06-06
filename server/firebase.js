@@ -8,7 +8,22 @@ let isMock = false;
 // Check if the serviceAccountKey.json exists in the server directory
 const serviceAccountPath = path.join(__dirname, "serviceAccountKey.json");
 
-if (fs.existsSync(serviceAccountPath)) {
+if (process.env.FIREBASE_PROJECT_ID && process.env.FIREBASE_CLIENT_EMAIL && process.env.FIREBASE_PRIVATE_KEY) {
+  try {
+    admin.initializeApp({
+      credential: admin.credential.cert({
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+        privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n')
+      })
+    });
+    db = admin.firestore();
+    console.log("Successfully connected to Google Firebase Firestore via Environment Variables.");
+  } catch (error) {
+    console.error("Failed to initialize Firebase Admin SDK via Env Vars:", error);
+    useMockDb();
+  }
+} else if (fs.existsSync(serviceAccountPath)) {
   try {
     const serviceAccount = require(serviceAccountPath);
     admin.initializeApp({
@@ -22,19 +37,35 @@ if (fs.existsSync(serviceAccountPath)) {
   }
 } else {
   console.warn("\n=======================================================");
-  console.warn("WARNING: serviceAccountKey.json not found in 'server/' folder.");
+  console.warn("WARNING: Firebase credentials not provided.");
   console.warn("Express server will use a local mock-db.json fallback.");
-  console.warn("To use real Google Firebase, place your serviceAccountKey.json in the 'server/' directory.");
   console.warn("=======================================================\n");
   useMockDb();
 }
 
 function useMockDb() {
   isMock = true;
-  const mockDbPath = path.join(__dirname, "mock-db.json");
+  const originalDbPath = path.join(__dirname, "mock-db.json");
+  const isVercel = !!process.env.VERCEL;
+  const mockDbPath = isVercel ? "/tmp/mock-db.json" : originalDbPath;
+
+  // Copy seed database to /tmp if it does not exist on Vercel
+  if (isVercel && !fs.existsSync(mockDbPath) && fs.existsSync(originalDbPath)) {
+    try {
+      fs.copyFileSync(originalDbPath, mockDbPath);
+      console.log("Copied seed mock-db.json to writeable /tmp/mock-db.json");
+    } catch (err) {
+      console.error("Failed to copy seed database to /tmp:", err);
+    }
+  }
   
   const readData = () => {
     if (!fs.existsSync(mockDbPath)) {
+      if (fs.existsSync(originalDbPath)) {
+        try {
+          return JSON.parse(fs.readFileSync(originalDbPath, "utf-8"));
+        } catch (e) {}
+      }
       return { users: [], hubs: [], records: [] };
     }
     try {
@@ -45,7 +76,11 @@ function useMockDb() {
   };
   
   const writeData = (data) => {
-    fs.writeFileSync(mockDbPath, JSON.stringify(data, null, 2), "utf-8");
+    try {
+      fs.writeFileSync(mockDbPath, JSON.stringify(data, null, 2), "utf-8");
+    } catch (e) {
+      console.error("Failed to write mock database:", e);
+    }
   };
 
   db = {
