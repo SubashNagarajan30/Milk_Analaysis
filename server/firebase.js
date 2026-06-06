@@ -46,11 +46,20 @@ if (process.env.FIREBASE_PROJECT_ID && process.env.FIREBASE_CLIENT_EMAIL && proc
 function useMockDb() {
   isMock = true;
   const originalDbPath = path.join(__dirname, "mock-db.json");
-  const isVercel = !!process.env.VERCEL;
-  const mockDbPath = isVercel ? "/tmp/mock-db.json" : originalDbPath;
+  let mockDbPath = originalDbPath;
 
-  // Copy seed database to /tmp if it does not exist on Vercel
-  if (isVercel && !fs.existsSync(mockDbPath) && fs.existsSync(originalDbPath)) {
+  // Dynamically test if we can write to the local directory (handles Vercel read-only filesystem)
+  try {
+    const testPath = path.join(__dirname, ".write-test");
+    fs.writeFileSync(testPath, "test");
+    fs.unlinkSync(testPath);
+  } catch (e) {
+    console.warn("Local filesystem is read-only. Switching mock-db path to /tmp/mock-db.json");
+    mockDbPath = "/tmp/mock-db.json";
+  }
+
+  // Copy seed database to /tmp if it does not exist yet in the writeable path
+  if (mockDbPath === "/tmp/mock-db.json" && !fs.existsSync(mockDbPath) && fs.existsSync(originalDbPath)) {
     try {
       fs.copyFileSync(originalDbPath, mockDbPath);
       console.log("Copied seed mock-db.json to writeable /tmp/mock-db.json");
